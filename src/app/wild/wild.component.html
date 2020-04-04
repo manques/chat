@@ -1,0 +1,31 @@
+<div class="row">
+  <div class="col-md-3 d-flex justify-content-center mb-2">
+    <mat-card class="py-3"
+             (mouseenter)="stateChange = !stateChange"
+             (mouseleave)="stateChange = !stateChange"
+             [@currentHover]=" !stateChange ? 'current' : 'hover'">
+      <h1 class="text-center">new animation</h1>
+    </mat-card>
+  </div>
+  <div class="col-md-3 d-flex justify-content-center mb-2">
+    <mat-card  class="py-3" (mouseenter)="onTrigger()"
+              (mouseleave)="onTrigger()"
+              [@currentHover]=" !stateChange ? 'current' : 'hover'">
+      <h1 class="text-center">new animation</h1>
+    </mat-card>
+  </div>
+  <div class="col-md-3 d-flex justify-content-center mb-2">
+    <mat-card class="py-3" (mouseenter)="onTrigger()"
+              (mouseleave)="onTrigger()"
+              [@currentHover]=" !stateChange ? 'current' : 'hover'">
+      <h1 class="text-center">new animation</h1>
+    </mat-card>
+  </div>
+  <div class="col-md-3 d-flex justify-content-center mb-2">
+    <mat-card class="py-3" (mouseenter)="onTrigger()"
+              (mouseleave)="onTrigger()"
+              [@currentHover]=" !stateChange ? 'current' : 'hover'">
+      <h1 class="text-center">new animation</h1>
+    </mat-card>
+  </div>
+</div>

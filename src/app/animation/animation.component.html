@@ -1,0 +1,7 @@
+<div class="d-flex justify-content-center p-3">
+  <mat-card class="animation-card" (mouseenter)="shadowIn()" (mouseleave)="shadowOut()" class="{{ shadow ? 'shadow' : 'shadow-none' }}"  [@openClose]="ani ? 'open' : 'close' ">
+    <button (click)="trigger()" class="{{ ani ? 'opener': 'closer'}}" mat-raised-button class="w-100">
+      <mat-icon>{{ani ? 'close' : 'menu_open'}}</mat-icon>
+    </button>
+  </mat-card>
+</div>

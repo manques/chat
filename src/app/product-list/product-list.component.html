@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row py-3">
+    <div class="col-md-3 mb-1"
+         (mouseenter)="onTouch()"
+         (mouseleave)="onTouch()"
+         *ngFor="let product of products">
+      <mat-card    class="product-card p-0 mb-2 {{touch ? 'shadow' : 'shadow-none'}} ">
+        <div class="d-flex justify-content-center">
+          <img class="product-image p-2" [src]="product.url">
+        </div>
+        <div class="bg-light w-100 py-2">
+          <h2 class="text-center p-0 m-0"><strong>{{product.name}}</strong></h2>
+          <p class="text-center p-0 m-0">Price: {{product.price}}</p>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>

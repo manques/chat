@@ -1,0 +1,42 @@
+.chat-card{
+  width: 350px;
+  position: relative;
+}
+
+.chat-search {
+  position: absolute;
+  bottom: 0;
+  left:0;
+  right: 0;
+}
+
+.box-content1 {
+  height: calc(100% - 64px);
+}
+
+.box-content-full > div{
+  overflow: scroll;
+  max-height: 100%;
+  color: purple !important;
+}
+
+::ng-deep.mat-form-field-appearance-outline:not(::ng-deep.mat-form-field-disabled)
+::ng-deep.mat-form-field-flex:hover
+::ng-deep.mat-form-field-outline-thick{
+  opacity: 0 !important;
+}
+
+::ng-deep.mat-form-field-appearance-outline
+::ng-deep.mat-form-field-outline-start,
+::ng-deep.mat-form-field-appearance-outline
+::ng-deep.mat-form-field-outline-end {
+  border: 0px !important;
+}
+::ng-deep.mat-form-field-flex{
+  background-color: whitesmoke !important;
+}
+
+.chat {
+  height: 500px !important;
+  background-color: lawngreen;
+}
